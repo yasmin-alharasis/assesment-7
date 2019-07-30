@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<title>Question 4</title>
+	<style type="text/css">
+    #no {
+    	background-color: red;
+    }
+    #yes {
+    	background-color: green;
+    }
+    button{
+    	width: 70px;
+    	height: 40px;
+    }
+</style>
+</head>
+
+<body>
+	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
+	<div style="height: 100px " class="main">Main div</div>
+<button id="no">red</button>
+<button id="yes">green</button>
+<script>
+    clc = true;
+$(document).ready(function(){
+
+    $("#no").click(function(){
+        if(clc){$('.main').css('background-color', 'red');
+            clc  = false;
+        } 
+        clc = true;
+    });
+
+    $("#yes").click(function(){
+    	if(clc){$('.main').css('background-color', 'green');
+            clc = false;
+        }
+        clc= true; 
+    });
+});
+
+</script>
+</body>
+
+</html>
